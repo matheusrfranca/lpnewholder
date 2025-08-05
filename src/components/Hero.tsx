@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Play, Star, Users, Award } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative min-h-screen bg-gradient-hero overflow-hidden">
       {/* Background Elements */}
@@ -17,49 +19,49 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             <Badge variant="outline" className="text-primary border-primary/30 bg-white/80 backdrop-blur-sm">
               <Star className="w-4 h-4 mr-2 fill-current" />
-              #1 em Landing Pages de Alta Conversão
+              {t('hero.badge')}
             </Badge>
             
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
-                  NEW HOLDER
+                  {t('hero.title')}
                 </span>
                 <br />
                 <span className="text-white">
-                  Transforme Visitantes em
+                  {t('hero.subtitle')}
                 </span>
                 <br />
                 <span className="text-white font-black">
-                  CLIENTES PAGANTES
+                  {t('hero.subtitle2')}
                 </span>
               </h1>
               
-              <p className="text-xl text-white/90 leading-relaxed max-w-lg">
-                Criamos <strong>Landing Pages</strong> que convertem até <strong className="text-primary-glow">300% mais</strong> do que páginas convencionais. 
-                Sua empresa merece resultados extraordinários.
-              </p>
+              <p 
+                className="text-xl text-white/90 leading-relaxed max-w-lg"
+                dangerouslySetInnerHTML={{ __html: t('hero.description') }}
+              />
               
               {/* Stats */}
               <div className="flex flex-wrap gap-6 text-white/80">
                 <div className="flex items-center gap-2">
                   <Users className="w-5 h-5 text-primary-glow" />
-                  <span className="font-semibold">1000+ LPs Criadas</span>
+                  <span className="font-semibold">{t('hero.stat1')}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Award className="w-5 h-5 text-primary-glow" />
-                  <span className="font-semibold">98% Aprovação</span>
+                  <span className="font-semibold">{t('hero.stat2')}</span>
                 </div>
               </div>
             </div>
             
             <div className="space-y-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg font-semibold shadow-glow hover:shadow-elegant transition-all duration-300 hover:scale-105">
-                Quero Minha LP Agora
+                {t('hero.cta')}
                 <span className="ml-2">→</span>
               </Button>
               <p className="text-sm text-white/70">
-                ✓ Consultoria gratuita • ✓ Sem compromisso • ✓ Resultados garantidos
+                {t('hero.guarantee')}
               </p>
             </div>
           </div>
@@ -80,10 +82,10 @@ const Hero = () => {
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="bg-black/50 backdrop-blur-sm rounded-lg p-4">
                     <h3 className="text-white font-semibold text-lg mb-1">
-                      Como Aumentei as Vendas em 300%
+                      {t('hero.videoTitle')}
                     </h3>
                     <p className="text-white/80 text-sm">
-                      Veja o método exato que uso para criar LPs que convertem
+                      {t('hero.videoDescription')}
                     </p>
                   </div>
                 </div>
@@ -93,11 +95,11 @@ const Hero = () => {
               <div className="mt-6 grid grid-cols-2 gap-4">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-white">5.2K</div>
-                  <div className="text-white/70 text-sm">Visualizações</div>
+                  <div className="text-white/70 text-sm">{t('hero.views')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-white">4.9⭐</div>
-                  <div className="text-white/70 text-sm">Avaliação</div>
+                  <div className="text-white/70 text-sm">{t('hero.rating')}</div>
                 </div>
               </div>
             </div>

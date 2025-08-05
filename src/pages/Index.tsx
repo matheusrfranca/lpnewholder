@@ -8,10 +8,12 @@ import OfferSection from "@/components/OfferSection";
 import DialogSection from "@/components/DialogSection";
 import DisclaimerSection from "@/components/DisclaimerSection";
 import Footer from "@/components/Footer";
+import LanguageToggle from "@/components/LanguageToggle";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <LanguageToggle />
       <Hero />
       <ProblemSection />
       <SolutionSection />

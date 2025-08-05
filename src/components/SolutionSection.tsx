@@ -1,5 +1,6 @@
 import { Target, Zap, TrendingUp, Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const SolutionSection = () => {
   const solutions = [

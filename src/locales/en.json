@@ -1,0 +1,178 @@
+{
+  "hero": {
+    "badge": "#1 in High-Converting Landing Pages",
+    "title": "NEW HOLDER",
+    "subtitle": "Turn Visitors Into",
+    "subtitle2": "PAYING CUSTOMERS",
+    "description": "We create <strong>Landing Pages</strong> that convert up to <strong>300% more</strong> than conventional pages. Your business deserves extraordinary results.",
+    "stat1": "1000+ LPs Created",
+    "stat2": "98% Approval",
+    "cta": "Get My LP Now",
+    "guarantee": "✓ Free consultation • ✓ No commitment • ✓ Guaranteed results",
+    "videoTitle": "How I Increased Sales by 300%",
+    "videoDescription": "See the exact method I use to create converting LPs",
+    "views": "Views",
+    "rating": "Rating"
+  },
+  "problem": {
+    "badge": "CRITICAL PROBLEM",
+    "title": "Your Business Is <span>Losing Money</span> Every Day",
+    "description": "While you read this, <strong>dozens of potential customers</strong> are visiting your website and leaving without buying. The reason? A page that doesn't convince, doesn't engage, and doesn't convert.",
+    "problems": [
+      {
+        "title": "Low Conversion Rate",
+        "description": "Your current page converts only 1-2% of visitors into customers"
+      },
+      {
+        "title": "Visitors Who Don't Buy",
+        "description": "90% of visitors leave without taking any action"
+      },
+      {
+        "title": "Lost Money",
+        "description": "Every lost visitor is a sale that didn't happen"
+      }
+    ],
+    "statsTitle": "The Numbers Don't Lie",
+    "statsDescription": "See the real impact of a poorly optimized page:",
+    "stats": [
+      {
+        "value": "$10,000",
+        "label": "Lost monthly due to low conversion"
+      },
+      {
+        "value": "85%",
+        "label": "Of visitors leave in less than 10 seconds"
+      },
+      {
+        "value": "300%",
+        "label": "More sales you could have with the right page"
+      }
+    ]
+  },
+  "solution": {
+    "badge": "PROVEN SOLUTION",
+    "title": "How We <span>Double</span> Your Online Sales",
+    "description": "Our <strong>exclusive</strong> methodology combines consumer psychology, persuasive design, and high-converting copywriting to create pages that <strong>sell for you</strong>.",
+    "solutions": [
+      {
+        "title": "Persuasive Copy",
+        "description": "Texts that touch the customer's pain and present your solution as the only alternative",
+        "benefit": "Increases interest by 250%"
+      },
+      {
+        "title": "Psychological Design",
+        "description": "Strategic layout that guides the visitor's eye straight to the purchase action",
+        "benefit": "Improves experience by 180%"
+      },
+      {
+        "title": "Conversion Funnels",
+        "description": "Perfect sequence that transforms curious visitors into convinced customers",
+        "benefit": "Multiplies sales by 3x"
+      },
+      {
+        "title": "Continuous Optimization",
+        "description": "Constant A/B testing to maximize every element of your page",
+        "benefit": "Always growing performance"
+      }
+    ],
+    "resultTitle": "The Result? An Automatic Sales Machine",
+    "resultStats": [
+      {
+        "value": "15-35%",
+        "label": "Conversion Rate"
+      },
+      {
+        "value": "300%+",
+        "label": "Sales Increase"
+      },
+      {
+        "value": "24/7",
+        "label": "Selling Automatically"
+      }
+    ],
+    "resultDescription": "While you sleep, your new Landing Page will be working, converting visitors into customers and multiplying your revenue."
+  },
+  "creator": {
+    "badge": "Creator of Brazil's Highest Converting LPs",
+    "title": "I Am <span>Matheus França</span>",
+    "description": "In 15 years of career, I discovered the <strong>secret</strong> that separates pages that sell from those that just exist: <strong>the psychology of persuasion applied to design</strong>.",
+    "whyDifferentTitle": "Why Is My Work Different?",
+    "achievements": [
+      "1000+ Landing Pages created and validated",
+      "98% client approval rate",
+      "$10M+ in sales generated for clients",
+      "Conversion Copywriting Specialist",
+      "15+ years of Digital Marketing experience"
+    ],
+    "quote": "I don't just create beautiful pages. I create <strong>persuasion systems</strong> that turn visitors into customers passionate about your brand.",
+    "quoteAuthor": "— Matheus França, Founder of New Holder",
+    "guaranteeTitle": "My Guarantee To You:",
+    "guaranteeText": "If your new Landing Page doesn't increase your conversions by at least <strong> 150% in the first 90 days</strong>, I'll redo it for free until you're satisfied.",
+    "guaranteeWhy": "<strong>Why?</strong> Because I know exactly what works.",
+    "cta": "I Want to Work with Matheus"
+  },
+  "benefits": {
+    "title": "The <span>Benefits</span> of a Professional Landing Page",
+    "description": "Investing in a high-converting LP isn't just about having a beautiful page. It's about <strong>completely transforming</strong> your business results.",
+    "benefits": [
+      {
+        "title": "Faster Launch",
+        "description": "Your LP will be ready in up to 15 days, not months like other agencies",
+        "highlight": "15x faster"
+      },
+      {
+        "title": "Immediate ROI",
+        "description": "Recover your investment in the first month with increased conversions",
+        "highlight": "300-500% ROI"
+      },
+      {
+        "title": "More Qualified Leads",
+        "description": "Attract exactly the type of customer you want with targeted copy",
+        "highlight": "70% more leads"
+      },
+      {
+        "title": "Scalable Growth",
+        "description": "A solid foundation that grows with your business without limitations",
+        "highlight": "No growth limit"
+      },
+      {
+        "title": "Time Savings",
+        "description": "Stop wasting time with pages that don't convert and focus on what matters",
+        "highlight": "40h/week saved"
+      },
+      {
+        "title": "Total Guarantee",
+        "description": "Complete support and free adjustments for 6 months after delivery",
+        "highlight": "6 months guarantee"
+      },
+      {
+        "title": "Optimized Performance",
+        "description": "Pages that load in less than 2 seconds on any device",
+        "highlight": "Maximum speed"
+      },
+      {
+        "title": "Accurate Conversion",
+        "description": "Tested methodology that converts 15-35% of visitors into customers",
+        "highlight": "Up to 35% conversion"
+      }
+    ],
+    "comparisonTitle": "Common LP vs New Holder LP",
+    "commonLP": "❌ Common Landing Page",
+    "newHolderLP": "✅ New Holder Landing Page",
+    "commonFeatures": [
+      "1-2% conversion",
+      "Generic design",
+      "Copy without persuasion",
+      "No optimization",
+      "Mediocre results"
+    ],
+    "newHolderFeatures": [
+      "15-35% conversion",
+      "Psychological design",
+      "High-converting copy",
+      "Continuous optimization",
+      "Extraordinary results"
+    ],
+    "differenceText": "The difference? Up to <strong>300% more sales</strong> with the same amount of traffic"
+  }
+}

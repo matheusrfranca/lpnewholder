@@ -1,21 +1,24 @@
 import { AlertTriangle, TrendingDown, Users, DollarSign } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const ProblemSection = () => {
+  const { t } = useTranslation();
+  
   const problems = [
     {
       icon: TrendingDown,
-      title: "Baixa Taxa de Conversão",
-      description: "Sua página atual converte apenas 1-2% dos visitantes em clientes"
+      title: t('problem.problems.0.title'),
+      description: t('problem.problems.0.description')
     },
     {
       icon: Users,
-      title: "Visitantes Que Não Compram",
-      description: "90% dos visitantes saem sem tomar nenhuma ação"
+      title: t('problem.problems.1.title'),
+      description: t('problem.problems.1.description')
     },
     {
       icon: DollarSign,
-      title: "Dinheiro Perdido",
-      description: "Cada visitante perdido é uma venda que não aconteceu"
+      title: t('problem.problems.2.title'),
+      description: t('problem.problems.2.description')
     }
   ];
 
@@ -26,18 +29,18 @@ const ProblemSection = () => {
         <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-in">
           <div className="inline-flex items-center gap-2 bg-destructive/10 text-destructive px-4 py-2 rounded-full mb-6">
             <AlertTriangle className="w-5 h-5" />
-            <span className="font-semibold">PROBLEMA CRÍTICO</span>
+            <span className="font-semibold">{t('problem.badge')}</span>
           </div>
           
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Sua Empresa Está <span className="text-destructive">Perdendo Dinheiro</span> 
-            <br />Todos os Dias
-          </h2>
+          <h2 
+            className="text-4xl lg:text-5xl font-bold text-foreground mb-6"
+            dangerouslySetInnerHTML={{ __html: t('problem.title') }}
+          />
           
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            Enquanto você lê isso, <strong>dezenas de clientes em potencial</strong> estão visitando 
-            seu site e saindo sem comprar. O motivo? Uma página que não convence, não engaja e não converte.
-          </p>
+          <p 
+            className="text-xl text-muted-foreground leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: t('problem.description') }}
+          />
         </div>
 
         {/* Problem Grid */}
@@ -67,38 +70,38 @@ const ProblemSection = () => {
         <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-card">
           <div className="text-center mb-8">
             <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
-              Os Números Não Mentem
+              {t('problem.statsTitle')}
             </h3>
             <p className="text-muted-foreground">
-              Veja o impacto real de uma página mal otimizada:
+              {t('problem.statsDescription')}
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bold text-destructive mb-2">
-                R$ 50.000
+                {t('problem.stats.0.value')}
               </div>
               <div className="text-muted-foreground">
-                Perdidos mensalmente por baixa conversão
+                {t('problem.stats.0.label')}
               </div>
             </div>
             
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bold text-destructive mb-2">
-                85%
+                {t('problem.stats.1.value')}
               </div>
               <div className="text-muted-foreground">
-                Dos visitantes saem em menos de 10 segundos
+                {t('problem.stats.1.label')}
               </div>
             </div>
             
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bold text-destructive mb-2">
-                300%
+                {t('problem.stats.2.value')}
               </div>
               <div className="text-muted-foreground">
-                Mais vendas você poderia ter com a página certa
+                {t('problem.stats.2.label')}
               </div>
             </div>
           </div>
