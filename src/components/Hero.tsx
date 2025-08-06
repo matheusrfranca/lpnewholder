@@ -7,7 +7,7 @@ const Hero = () => {
   const { t } = useTranslation();
   return (
     <section className="relative min-h-screen bg-gradient-dark overflow-hidden">
-      {/* Background Elements */}
+      {/* Back Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
       <div className="absolute top-20 left-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-20 right-20 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
