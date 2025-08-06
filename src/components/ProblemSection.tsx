@@ -23,11 +23,11 @@ const ProblemSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-subtle">
+    <section className="py-20 bg-gradient-dark">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-destructive/10 text-destructive px-4 py-2 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 border border-primary/20">
             <AlertTriangle className="w-5 h-5" />
             <span className="font-semibold">{t('problem.badge')}</span>
           </div>
@@ -48,11 +48,11 @@ const ProblemSection = () => {
           {problems.map((problem, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group animate-slide-up"
+              className="bg-card rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group animate-slide-up border border-primary/10"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="w-16 h-16 bg-destructive/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <problem.icon className="w-8 h-8 text-destructive" />
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <problem.icon className="w-8 h-8 text-primary" />
               </div>
               
               <h3 className="text-xl font-bold text-foreground mb-4">
@@ -67,7 +67,7 @@ const ProblemSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-card">
+        <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-card border border-primary/10">
           <div className="text-center mb-8">
             <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
               {t('problem.statsTitle')}
@@ -79,7 +79,7 @@ const ProblemSection = () => {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold text-destructive mb-2">
+              <div className="text-4xl lg:text-5xl font-bold text-primary mb-2">
                 {t('problem.stats.0.value')}
               </div>
               <div className="text-muted-foreground">
@@ -88,7 +88,7 @@ const ProblemSection = () => {
             </div>
             
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold text-destructive mb-2">
+              <div className="text-4xl lg:text-5xl font-bold text-primary mb-2">
                 {t('problem.stats.1.value')}
               </div>
               <div className="text-muted-foreground">
@@ -97,7 +97,7 @@ const ProblemSection = () => {
             </div>
             
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold text-destructive mb-2">
+              <div className="text-4xl lg:text-5xl font-bold text-primary mb-2">
                 {t('problem.stats.2.value')}
               </div>
               <div className="text-muted-foreground">

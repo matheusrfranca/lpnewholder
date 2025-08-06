@@ -1,35 +1,35 @@
 {
   "hero": {
-    "badge": "#1 em Landing Pages de Alta Conversão",
-    "title": "NEW HOLDER",
-    "subtitle": "Transforme Visitantes em",
-    "subtitle2": "CLIENTES PAGANTES",
-    "description": "Criamos <strong>Landing Pages</strong> que convertem até <strong>300% mais</strong> do que páginas convencionais. Sua empresa merece resultados extraordinários.",
-    "stat1": "1000+ LPs Criadas",
-    "stat2": "98% Aprovação",
-    "cta": "Quero Minha LP Agora",
-    "guarantee": "✓ Consultoria gratuita • ✓ Sem compromisso • ✓ Resultados garantidos",
-    "videoTitle": "Como Aumentei as Vendas em 300%",
-    "videoDescription": "Veja o método exato que uso para criar LPs que convertem",
+    "badge": "#1 em Criação de Sites Profissionais",
+    "title": "WEBCRAFT",
+    "subtitle": "Transforme Sua Ideia em",
+    "subtitle2": "SITE PROFISSIONAL",
+    "description": "Criamos <strong>Sites Profissionais</strong> que convertem até <strong>300% mais</strong> visitantes em clientes. Sua empresa merece uma presença digital extraordinária.",
+    "stat1": "500+ Sites Criados",
+    "stat2": "98% Satisfação",
+    "cta": "Criar Meu Site Agora",
+    "guarantee": "✓ Consultoria gratuita • ✓ Sem compromisso • ✓ Resultado garantido",
+    "videoTitle": "Como Criei um Site que Multiplica Vendas",
+    "videoDescription": "Veja o processo completo de criação de sites que convertem",
     "views": "Visualizações",
     "rating": "Avaliação"
   },
   "problem": {
     "badge": "PROBLEMA CRÍTICO",
-    "title": "Sua Empresa Está <span>Perdendo Dinheiro</span> Todos os Dias",
-    "description": "Enquanto você lê isso, <strong>dezenas de clientes em potencial</strong> estão visitando seu site e saindo sem comprar. O motivo? Uma página que não convence, não engaja e não converte.",
+    "title": "Seu Negócio Está <span>Perdendo Clientes</span> Todos os Dias",
+    "description": "Enquanto você lê isso, <strong>centenas de potenciais clientes</strong> estão procurando seus serviços online e escolhendo seus concorrentes. O motivo? Você não tem um site profissional que transmite credibilidade.",
     "problems": [
       {
-        "title": "Baixa Taxa de Conversão",
-        "description": "Sua página atual converte apenas 1-2% dos visitantes em clientes"
+        "title": "Sem Presença Online",
+        "description": "Seu negócio é invisível para 80% dos clientes que pesquisam online"
       },
       {
-        "title": "Visitantes Que Não Compram",
-        "description": "90% dos visitantes saem sem tomar nenhuma ação"
+        "title": "Site Amador ou Inexistente",
+        "description": "Clientes não confiam em empresas sem site profissional"
       },
       {
-        "title": "Dinheiro Perdido",
-        "description": "Cada visitante perdido é uma venda que não aconteceu"
+        "title": "Concorrência Ganhando",
+        "description": "Seus concorrentes estão capturando os clientes que deveriam ser seus"
       }
     ],
     "statsTitle": "Os Números Não Mentem",
