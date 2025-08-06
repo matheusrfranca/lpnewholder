@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
           
-          {/* Left Side - Brand & Copy */}
+          {/* Left Side -  Copy */}
           <div className="space-y-8 animate-fade-in">
             <Badge variant="outline" className="text-primary border-primary/30 bg-card/80 backdrop-blur-sm">
               <Star className="w-4 h-4 mr-2 fill-current" />
