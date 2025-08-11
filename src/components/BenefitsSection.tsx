@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { 
   Rocket, 
   Clock, 
@@ -14,174 +13,225 @@ const BenefitsSection = () => {
   const benefits = [
     {
       icon: Rocket,
-      title: "Lançamento Mais Rápido",
-      description: "Sua LP ficará pronta em até 15 dias, não em meses como outras agências",
-      highlight: "15x mais rápido"
+      title: "Faster Launch",
+      description: "Your landing page will be ready in up to 15 days, not months like other agencies",
+      highlight: "15x faster delivery"
     },
     {
       icon: DollarSign,
-      title: "ROI Imediato",
-      description: "Recupere o investimento já no primeiro mês com o aumento de conversões",
-      highlight: "ROI de 300-500%"
+      title: "Immediate ROI",
+      description: "Recover your investment in the first month with increased conversion rates",
+      highlight: "300-500% ROI"
     },
     {
       icon: Users,
-      title: "Mais Leads Qualificados",
-      description: "Atraia exatamente o tipo de cliente que você quer com copy direcionada",
-      highlight: "70% mais leads"
+      title: "More Qualified Leads",
+      description: "Attract exactly the type of customer you want with targeted copywriting",
+      highlight: "70% more leads"
     },
     {
       icon: TrendingUp,
-      title: "Crescimento Escalável",
-      description: "Uma base sólida que cresce junto com seu negócio sem limitações",
-      highlight: "Sem limite de crescimento"
+      title: "Scalable Growth",
+      description: "A solid foundation that grows with your business without limitations",
+      highlight: "Unlimited growth potential"
     },
     {
       icon: Clock,
-      title: "Economia de Tempo",
-      description: "Pare de perder tempo com páginas que não convertem e foque no que importa",
-      highlight: "40h/semana economizadas"
+      title: "Time Savings",
+      description: "Stop wasting time with pages that don't convert and focus on what matters",
+      highlight: "40h/week saved"
     },
     {
       icon: Shield,
-      title: "Garantia Total",
-      description: "Suporte completo e ajustes gratuitos por 6 meses após a entrega",
-      highlight: "6 meses de garantia"
+      title: "Total Guarantee",
+      description: "Complete support and free adjustments for 6 months after delivery",
+      highlight: "6-month warranty"
     },
     {
       icon: Zap,
-      title: "Performance Otimizada",
-      description: "Páginas que carregam em menos de 2 segundos em qualquer dispositivo",
-      highlight: "Velocidade máxima"
+      title: "Optimized Performance",
+      description: "Pages that load in less than 2 seconds on any device",
+      highlight: "Maximum speed"
     },
     {
       icon: Target,
-      title: "Conversão Certeira",
-      description: "Metodologia testada que converte 15-35% dos visitantes em clientes",
-      highlight: "Até 35% de conversão"
+      title: "Precise Conversion",
+      description: "Tested methodology that converts 15-35% of visitors into customers",
+      highlight: "Up to 35% conversion"
     }
   ];
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-black relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-orange-500/8 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-red-400/6 rounded-full blur-2xl animate-pulse" style={{ animationDelay: "1s" }}></div>
+        
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="w-full h-full" style={{
+            backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)',
+            backgroundSize: '40px 40px'
+          }}></div>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Os <span className="bg-gradient-primary bg-clip-text text-transparent">Benefícios</span> de Uma 
-            <br />Landing Page Profissional
+          <div className="inline-flex items-center gap-2 text-orange-400 mb-8">
+            <Shield className="w-5 h-5" />
+            <span className="font-medium text-sm uppercase tracking-wider">Proven Benefits</span>
+          </div>
+          
+          <h2 className="text-4xl lg:text-5xl font-light text-white mb-6 leading-tight">
+            The{" "}
+            <span className="font-bold text-transparent bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text">
+              Benefits
+            </span>{" "}
+            of a Professional Landing Page
           </h2>
           
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            Investir em uma LP de alta conversão não é apenas sobre ter uma página bonita. 
-            É sobre <strong>transformar completamente</strong> os resultados do seu negócio.
+          <p className="text-xl text-gray-400 leading-relaxed max-w-3xl mx-auto">
+            Investing in a high-conversion LP isn't just about having a beautiful page. 
+            It's about <strong className="text-white">completely transforming</strong> your business results.
           </p>
         </div>
 
         {/* Benefits Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {benefits.map((benefit, index) => (
-            <Card 
+            <div 
               key={index}
-              className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 animate-slide-up"
+              className="bg-gray-900/20 backdrop-blur-sm rounded-2xl p-8 border border-gray-800/30 hover:border-gray-700/50 transition-all duration-300 group hover:-translate-y-2 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardContent className="p-6">
-                <div className="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-glow">
-                  <benefit.icon className="w-7 h-7 text-white" />
-                </div>
-                
-                <h3 className="text-lg font-bold text-foreground mb-3">
-                  {benefit.title}
-                </h3>
-                
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  {benefit.description}
-                </p>
-                
-                <div className="bg-primary/5 rounded-lg p-3">
-                  <span className="text-primary font-semibold text-xs">
-                    {benefit.highlight}
-                  </span>
-                </div>
-              </CardContent>
-            </Card>
+              <div className="w-14 h-14 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform border border-orange-500/20">
+                <benefit.icon className="w-6 h-6 text-orange-400" />
+              </div>
+              
+              <h3 className="text-xl font-semibold text-white mb-4">
+                {benefit.title}
+              </h3>
+              
+              <p className="text-gray-400 mb-4 leading-relaxed text-sm">
+                {benefit.description}
+              </p>
+              
+              <div className="bg-orange-500/10 rounded-lg p-3 border border-orange-500/20">
+                <span className="text-orange-400 font-medium text-sm">
+                  ✓ {benefit.highlight}
+                </span>
+              </div>
+            </div>
           ))}
         </div>
 
         {/* Comparison Section */}
-        <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-card">
-          <h3 className="text-2xl lg:text-3xl font-bold text-foreground text-center mb-8">
-            LP Comum vs LP da New Holder
+        <div className="bg-gradient-to-r from-gray-900/30 to-gray-800/30 backdrop-blur-sm rounded-2xl p-8 lg:p-12 border border-gray-700/30 animate-fade-in">
+          <h3 className="text-2xl lg:text-3xl font-light text-white text-center mb-12">
+            Common LP vs{" "}
+            <span className="font-bold text-transparent bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text">
+              Professional LP
+            </span>
           </h3>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* LP Comum */}
-            <div className="space-y-4">
-              <h4 className="text-xl font-bold text-destructive mb-4">
-                ❌ Landing Page Comum
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Common LP */}
+            <div className="space-y-6">
+              <h4 className="text-xl font-semibold text-red-400 mb-6 flex items-center gap-2">
+                <span className="text-2xl">❌</span> Common Landing Page
               </h4>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-destructive rounded-full"></div>
-                  <span className="text-muted-foreground">1-2% de conversão</span>
+                  <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                  <span className="text-gray-400">1-2% conversion rate</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-destructive rounded-full"></div>
-                  <span className="text-muted-foreground">Design genérico</span>
+                  <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                  <span className="text-gray-400">Generic design</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-destructive rounded-full"></div>
-                  <span className="text-muted-foreground">Copy sem persuasão</span>
+                  <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                  <span className="text-gray-400">Copy without persuasion</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-destructive rounded-full"></div>
-                  <span className="text-muted-foreground">Sem otimização</span>
+                  <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                  <span className="text-gray-400">No optimization</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-destructive rounded-full"></div>
-                  <span className="text-muted-foreground">Resultados medíocres</span>
+                  <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                  <span className="text-gray-400">Mediocre results</span>
                 </div>
               </div>
             </div>
             
-            {/* LP New Holder */}
-            <div className="space-y-4">
-              <h4 className="text-xl font-bold text-primary mb-4">
-                ✅ Landing Page New Holder
+            {/* Professional LP */}
+            <div className="space-y-6">
+              <h4 className="text-xl font-semibold text-orange-400 mb-6 flex items-center gap-2">
+                <span className="text-2xl">✅</span> Professional Landing Page
               </h4>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">15-35% de conversão</span>
+                  <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                  <span className="text-gray-400">15-35% conversion rate</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">Design psicológico</span>
+                  <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                  <span className="text-gray-400">Psychological design</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">Copy de alta conversão</span>
+                  <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                  <span className="text-gray-400">High-conversion copy</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">Otimização contínua</span>
+                  <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                  <span className="text-gray-400">Continuous optimization</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">Resultados extraordinários</span>
+                  <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                  <span className="text-gray-400">Extraordinary results</span>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="text-center mt-8 p-6 bg-gradient-primary rounded-xl text-white">
-            <p className="text-lg font-semibold">
-              A diferença? Até <strong>300% mais vendas</strong> com a mesma quantidade de tráfego
-            </p>
+          <div className="text-center mt-12">
+            <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 backdrop-blur-sm rounded-xl p-6 border border-orange-500/30">
+              <p className="text-lg text-white font-light">
+                The difference? Up to{" "}
+                <span className="font-bold text-transparent bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text">
+                  300% more sales
+                </span>{" "}
+                with the same amount of traffic
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      
+      <style>
+        {`
+          @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+          
+          @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+          
+          .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+          }
+          
+          .animate-slide-up {
+            animation: slideUp 0.8s ease-out forwards;
+          }
+        `}
+      </style>
     </section>
   );
 };
